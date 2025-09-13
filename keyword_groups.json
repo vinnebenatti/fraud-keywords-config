@@ -1,0 +1,28 @@
+{
+    "version": "2025-09-12T00:00:00Z",
+    "default": {
+      "min_matches": "all",
+      "case_insensitive": true,
+      "strip_accents": true,
+      "strip_urls": true,
+      "destinations": ["#fraud-alerts"],
+      "enabled": true,
+      "lookback_minutes": 5
+    },
+    "groups": [
+      {
+        "id": "crypto_linked_accounts",
+        "description": "coin + linked + account na mesma mensagem",
+        "keywords": ["coin", "linked", "account"],
+        "min_matches": 3,
+        "destinations": ["#fraud-ops"]
+      },
+      {
+        "id": "card_refund",
+        "keywords": ["refund", "chargeback", "dispute"],
+        "min_matches": 2,
+        "exclusions": ["support", "official channel"]
+      }
+    ]
+  }
+  
