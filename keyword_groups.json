@@ -22,11 +22,5 @@
       "min_matches": 2,
       "exclusions": ["support", "official channel"]
     },
-    {
-      "id": "test",
-      "description": "codigo + verificacao + compartilhe (mín 3)",
-      "keywords": ["codigo", "verificacao", "compartilhe"],
-      "min_matches": 3
-    }
   ]
 }
