@@ -12,20 +12,35 @@
     {
       "id": "crypto_linked_accounts",
       "description": "coin + linked + account in the same message",
-      "keywords": ["coin", "linked", "account"],
+      "keywords": [
+        "coin",
+        "linked",
+        "account"
+      ],
       "min_matches": 3
     },
     {
       "id": "card_refund",
-      "description": "refund + chargeback + dispute (mín 2)",
-      "keywords": ["refund", "chargeback", "dispute"],
+      "description": "refund + chargeback + dispute (min 2)",
+      "keywords": [
+        "refund",
+        "chargeback",
+        "dispute"
+      ],
       "min_matches": 2,
-      "exclusions": ["support", "official channel"]
+      "exclusions": [
+        "support",
+        "official channel"
+      ]
     },
     {
       "id": "test",
-      "description": "codigo + verificacao + compartilhe (mín 3)",
-      "keywords": ["codigo", "verificacao", "compartilhe"],
+      "description": "codigo + verificacao + compartilhe (min 3)",
+      "keywords": [
+        "codigo",
+        "verificacao",
+        "compartilhe"
+      ],
       "min_matches": 3
     }
   ]
