@@ -32,16 +32,6 @@
         "support",
         "official channel"
       ]
-    },
-    {
-      "id": "test",
-      "description": "codigo + verificacao + compartilhe (min 3)",
-      "keywords": [
-        "codigo",
-        "verificacao",
-        "compartilhe"
-      ],
-      "min_matches": 3
     }
   ]
 }
