@@ -32,15 +32,6 @@
         "support",
         "official channel"
       ]
-    },
-     {
-      "id": "teste_lari_1",
-      "description": "compra + aprovada",
-      "keywords": [
-        "compra",
-        "aprovada"
-      ],
-      "min_matches": 2
     }
   ]
 }
