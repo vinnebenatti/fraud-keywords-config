@@ -40,7 +40,7 @@
         "compra",
         "aprovada"
       ],
-      "min_matches": 100
+      "min_matches": 4
     }
   ]
 }
