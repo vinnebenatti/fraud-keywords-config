@@ -48,6 +48,22 @@ Global configuration applied to all groups (can be overridden inside each group)
 - `strip_urls`: remove URLs before analysis.
 - `lookback_minutes`: time window in minutes used in ClickHouse queries.
 
+
+## ⏱️ Note on `lookback_minutes`
+
+The value of `lookback_minutes` in the JSON defines **the query time window** in ClickHouse **and** is used by the `cron_sync.sh` script to adjust cron execution.
+
+⚠️ **Important:** cron can only represent certain multiples of time.  
+The values supported exactly are:
+
+`5, 10, 15, 20, 30, 60, 120, 180, 240, 360, 720, 1440`
+
+- Example: `lookback_minutes = 20` → cron runs as `*/20 * * * *`  
+- Example: `lookback_minutes = 120` → cron runs as `0 */2 * * *`  
+
+If another value is used (e.g., `7` or `90`), cron will fall back to `* * * * *` (every minute).  
+In that case, the **deduper** ensures no duplicate alerts, but the runner will execute more often than necessary.
+
 ---
 
 ### 🔹 **Each `group`**
@@ -93,3 +109,4 @@ Defines a specific rule:
 - Use `exclusions` to reduce false positives.  
 - Combine keywords with flexible `min_matches` (e.g., 2 out of 4).  
 - Always give each group a unique `id` to facilitate deduplication.
+
