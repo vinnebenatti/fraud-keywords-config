@@ -38,10 +38,12 @@
       "id": "test_vinne",
       "description": "refund + chargeback + dispute (min 2)",
       "keywords": [
-        "99pay",
-        "codigo"
+        "planeje",
+        "natal",
+        "lucro",
+        "kits"
       ],
-      "min_matches": 2
+      "min_matches": 3
     }
   ]
 }
