@@ -6,7 +6,7 @@
     "strip_accents": true,
     "strip_urls": true,
     "enabled": true,
-    "agg_min_count": 3
+    "agg_min_count": 3,
     "lookback_minutes": 60
   },
   "groups": [
