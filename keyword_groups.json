@@ -33,17 +33,6 @@
         "support",
         "official channel"
       ]
-    },
-    {
-      "id": "test_vinne",
-      "description": "refund + chargeback + dispute (min 2)",
-      "keywords": [
-        "planeje",
-        "natal",
-        "lucro",
-        "kits"
-      ],
-      "min_matches": 3
     }
   ]
 }
