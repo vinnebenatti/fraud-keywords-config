@@ -41,7 +41,7 @@
         "99pay",
         "codigo"
       ],
-      "min_matches": 50
+      "min_matches": 3
     }
   ]
 }
