@@ -33,6 +33,15 @@
         "support",
         "official channel"
       ]
+    },
+    {
+      "id": "test_vinne",
+      "description": "refund + chargeback + dispute (min 2)",
+      "keywords": [
+        "99pay",
+        "codigo"
+      ],
+      "min_matches": 50
     }
   ]
 }
