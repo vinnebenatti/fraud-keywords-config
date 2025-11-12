@@ -33,15 +33,6 @@
         "support",
         "official channel"
       ]
-    },
-    {
-      "id": "vinne_test_java",
-      "description": "teste java",
-      "keywords": [
-        "99pay",
-        "codigo"
-      ],
-      "min_matches": 2
     }
   ]
 }
