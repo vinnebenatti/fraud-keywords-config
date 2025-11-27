@@ -48,7 +48,7 @@
         "waiting", "awaiting",
         "delivery", "send"
       ],
-      "min_matches": 2,
+      "min_matches": 3,
       "regions": ["US", "CA"]
     }
   ]
