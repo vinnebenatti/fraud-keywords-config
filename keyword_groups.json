@@ -13,26 +13,43 @@
     {
       "id": "crypto_linked_accounts",
       "description": "coin + linked + account in the same message",
-      "keywords": [
-        "coin",
-        "linked",
-        "account"
-      ],
+      "keywords": ["coin", "linked", "account"],
       "min_matches": 3
     },
     {
       "id": "card_refund",
       "description": "refund + chargeback + dispute (min 2)",
+      "keywords": ["refund", "chargeback", "dispute"],
+      "min_matches": 2,
+      "exclusions": ["support", "official channel"]
+    },
+
+    {
+      "id": "fraud_risk_us_ca",
+      "description": "If message contains at least 3 financial/risk terms (US & CA only)",
       "keywords": [
-        "refund",
-        "chargeback",
-        "dispute"
+        "alert",
+        "contact", "call", "dial", "reach",
+        "attempted", "attempt", "detected",
+        "debit", "charge", "charged", "deposit", "transaction", "transfer", "purchase",
+        "account", "card", "password", "passwords",
+        "denied", "failed", "blocked", "deny", "limited", "restricted", "expired", "risk",
+        "authorize", "update", "unauthorized", "protect", "cancellation", "restore"
+      ],
+      "min_matches": 3,
+      "regions": ["US", "CA"]
+    },
+
+    {
+      "id": "parcel_delivery_us_ca",
+      "description": "Alert if message contains parcel/order + waiting + delivery terms (US & CA only)",
+      "keywords": [
+        "order", "package", "parcel",
+        "waiting", "awaiting",
+        "delivery", "send"
       ],
       "min_matches": 2,
-      "exclusions": [
-        "support",
-        "official channel"
-      ]
+      "regions": ["US", "CA"]
     }
   ]
 }
